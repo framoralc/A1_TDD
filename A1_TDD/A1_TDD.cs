@@ -8,5 +8,18 @@ namespace A1_TDD
 {
     public class A1_TDD
     {
+        public static long CalcularFactorial(int n)
+        {
+            if (n < 0)
+                return -1;
+            if (n == 0)
+                return 1;
+            int result = 1;
+            for (int i = n; i > 0; i--)
+            {
+                result *= i;
+            }
+            return result;
+        }
     }
 }

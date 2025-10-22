@@ -3,18 +3,14 @@
 namespace TestA1_TDD
 {
     [TestClass]
-    public sealed class Test1
+    public sealed class Test_CaluclarFactorial
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
 
         [TestMethod]
         public void Devuelve_Menos_Uno()
         {
             int num1 = -5;
-            int resul = A1_TDD.CalcularFactorial(num1);
+            long resul = A1_TDD.A1_TDD.CalcularFactorial(num1);
             Assert.AreEqual(-1, resul);
         }
 
@@ -22,15 +18,15 @@ namespace TestA1_TDD
         public void Devuelve_Uno()
         {
             int num1 = 0;
-            int resul = A1_TDD.CalcularFactorial(num1);
+            long resul = A1_TDD.A1_TDD.CalcularFactorial(num1);
             Assert.AreEqual(1, resul);
         }
 
         [TestMethod]
-        public void = Devuelve_El_Factorial(num1)
+        public void Devuelve_El_Factorial()
         {
             int num1 = 5;
-            int resul = A1_TDD.CalcularFactorial(num1);
+            long resul = A1_TDD.A1_TDD.CalcularFactorial(num1);
             Assert.AreEqual(120, resul);
         }
     }
