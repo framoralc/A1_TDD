@@ -21,5 +21,13 @@ namespace A1_TDD
             }
             return result;
         }
+
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            if (contrasenya == null|| contrasenya == "" || contrasenya.Length < 8 || !contrasenya.Contains('#'))
+                return false;
+
+            return true;
+        }
     }
 }
